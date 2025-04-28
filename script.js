@@ -35,3 +35,4 @@ function loadGame(game) {
     $(gameContainer).fadeIn(200);
   });
 }
+
