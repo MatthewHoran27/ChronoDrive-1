@@ -1,0 +1,136 @@
+@font-face {
+  font-family: EightBitDragon;
+  src: url("https://cdn.glitch.global/90472888-ac71-474c-b5b3-a72fb3267e17/eight-bit-dragon.otf?v=1742168709571");
+}
+
+h1, h2, h3, #ticket-header, #actor-header {
+ font-family: EightBitDragon;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+footer {
+  position: relative;
+  padding: 2rem 0;
+  z-index: 3;
+}
+
+.pusher {
+  flex-grow: 1; 
+}
+
+.minigame-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1; 
+    padding: 2rem;
+}
+
+footer.ui.footer.segment {
+    margin-top: auto;
+}
+
+.center-menu-heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.sidebar-icon {
+    position: absolute;
+    right: 1rem;
+    top: 30%;
+    transform: translateY(-30%);
+}
+
+body.minigame-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.minigame-grid {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.minigame-grid .column {
+  flex-grow: 1;
+	padding: 2rem;
+}
+
+.minigame-grid .column h2.ui.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#game-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#game-container iframe {
+    width: 100%;
+    height: 80vh;
+    max-width: 100%;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .game-logo img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    #game-container iframe {
+        height: 60vh; 
+    }
+}
+
+.game-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.ui.cards {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chrono Drift - Minigames</title>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	
+	<body class="minigame-body">
+		<nav class="ui sidebar inverted vertical menu right" id="sidebar_menu">
+			<a class="item" href="index.html">Home</a>
+			<a class="item" href="actor.html">Actor List</a>
+			<a class="active item" href="minigames.html">Mini Games</a>
+			<a class="item" href="ticket.html">Buy Tickets</a>
+		</nav>
+		
+		<div class="pusher">
+			<header>
+				<div class="ui inverted vertical center aligned segment">
+					<div class="ui container">
+						<div class="ui large secondary inverted pointing menu">
+							<a class="item" href="index.html">
+								<img src="assets/Logo.PNG" alt="Chrono Drift Logo" class="ui tiny image">
+							</a>
+							<div class="center-menu-heading">
+								<h1 class="ui inverted header">Mini Games</h1>
+							</div>
+							<div onclick="toggleMenu()" class="right item sidebar-icon">
+								<i class="big sidebar icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<main class="pusher">
+				<div class="ui vertical stripe quote segment">
+					<div class="ui equal width stackable internally celled grid">
+						<div class="center aligned row">
+							<div class="column">
+								<h2>Game Preview</h2>
+								<hr>
+								<div id="game-container">
+									<p>Select a game on the right to start playing!</p>
+								</div>
+							</div>
+
+							<div class="column">
+								<h2>Choose Your Game</h2>
+								<hr>
+								<div class="game-logo-container">
+									<div class="ui cards">
+										<div class="card game-logo" onclick="loadGame('game1')">
+											<div class="image">
+												<img src="assets/Game 1.png" alt="Game 1 Logo">
+											</div>
+											
+											<div class="content">
+												<div class="header">Game 1</div>
+											</div>
+										</div>
+										
+										<div class="card game-logo" onclick="loadGame('game2')">
+											<div class="image">
+												<img src="assets/Game 2.png" alt="Game 2 Logo">
+											</div>
+											
+											<div class="content">
+												<div class="header">Game 2</div>
+											</div>
+										</div>
+										
+										<div class="card game-logo" onclick="loadGame('game3')">
+											<div class="image">
+												<img src="assets/Game 3.png" alt="Game 3 Logo">
+											</div>
+											
+											<div class="content">
+												<div class="header">Game 3</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="ui inverted vertical footer segment">
+				<h4 class="ui inverted header">©ChronoDrift 2025</h4>
+			</footer>
+		</div>
+	</body>
+</html>

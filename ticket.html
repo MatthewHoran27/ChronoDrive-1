@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chrono Drift - Buy Tickets</title>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body class="pushable">
+		<header>
+			<nav>
+				<div class="pusher">
+					<div class="ui inverted vertical center aligned segment">
+						<div class="ui container">
+							<div class="ui large secondary inverted pointing menu">
+								<a class="item" href="index.html">
+									<img src="assets/Logo.PNG" alt="Chrono Drift Logo" class="ui tiny image">
+								</a>
+
+								<div class="center-menu-heading">
+									<h1 class="ui inverted header">Buy Tickets</h1>
+								</div>
+
+								<div onclick="toggleMenu()" class="right item sidebar-icon">
+									<i class="big sidebar icon"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="sidebar_menu" class="ui vertical inverted sidebar menu right">
+						<a class="item" href="index.html">Home</a>
+						<a class="item" href="actor.html">Actor List</a>
+						<a class="item" href="minigames.html">Mini Games</a>
+						<a class="active item" href="ticket.html">Buy Tickets</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="pusher">
+			<div class="ui vertical stripe segment">
+				<h2 class="ui header center aligned" id="ticket-header">Find locations and Purchase tickets</h2>
+				<hr>
+				<div class="ui stackable grid container">
+					<div class="six wide column center aligned">
+						<img class="ui large bordered rounded image" src="assets/Logo.PNG" alt="Chrono Drift Poster">
+					</div>
+					
+					<div class="ten wide column">
+						<div class="ui segment">
+							<h3 class="ui header">Select Cinema, Date, and Time</h3>
+							<form class="ui form">
+								<div class="field">
+									<label>Cinema Location</label>
+									<select class="ui dropdown">
+										<option>Select Cinema</option>
+										<option>Omniplex Waterford</option>
+										<option>Odean Waterford</option>
+										<option>Movies @ Dungarvan</option>
+									</select>
+								</div>
+
+								<div class="field">
+									<label>Date</label>
+									<input type="date" name="date">
+								</div>
+
+								<div class="field">
+									<label>Time</label>
+									<select class="ui dropdown">
+										<option>Select Time</option>
+										<option>1:00 PM</option>
+										<option>4:00 PM</option>
+										<option>7:00 PM</option>
+										<option>9:00 PM</option>
+									</select>
+								</div>
+
+								<div class="field">
+									<label>Seats Available</label>
+									<input type="number" placeholder="Select number of seats" min="1" max="10">
+								</div>
+							</form>
+						</div>
+
+						<div class="ui segment">
+							<h3 class="ui header">Payment Details</h3>
+							<form class="ui form">
+								<div class="field">
+									<label>Name on Card</label>
+									<input type="text" placeholder="Full Name">
+								</div>
+
+								<div class="field">
+									<label>Card Number</label>
+									<input type="text" placeholder="1234 5678 9012 3456">
+								</div>
+
+								<div class="two fields">
+									<div class="field">
+										<label>Expiry Date</label>
+										<input type="text" placeholder="MM/YY">
+									</div>
+									<div class="field">
+										<label>CVC</label>
+										<input type="text" placeholder="123">
+									</div>
+								</div>
+
+								<div class="field">
+									<button class="ui primary button" type="submit">Purchase Tickets</button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</main>
+
+		<footer class="ui inverted vertical footer segment">
+			<h4 class="ui inverted header">©ChronoDrift 2025</h4>
+		</footer>
+	</body>
+</html>
