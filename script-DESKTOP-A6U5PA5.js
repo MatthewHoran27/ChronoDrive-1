@@ -26,11 +26,11 @@ function loadGame(game) {
       iframeUrl = '';
   }
 
+
   $(gameContainer).fadeOut(200, function() {
 
-    gameContainer.innerHTML = `<iframe src="${iframeUrl}" frameborder="0" width="600" height="700"></iframe>`;
+    gameContainer.innerHTML = `<iframe src="${iframeUrl}" frameborder="0"></iframe>`;
     
     $(gameContainer).fadeIn(200);
   });
 }
-
